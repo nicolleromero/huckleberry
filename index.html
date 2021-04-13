@@ -1,67 +1,70 @@
-<html>
-  <head>
-    <title>
-      Huckleberry — CSS for JavaScript Developers
-    </title>
-    <link rel="stylesheet" href="./style.css" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <div class="max-width-wrapper">
-        <div class="intro-chunk">
-          <h1 class="title">Huckleberry</h1>
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
 
-          <p>
-            An avant-garde agency focused on
-            connecting
-            <strong>passion</strong> with
-            <strong>logistics</strong>.
-          </p>
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
-          <p>
-            A better way to solve the problems of
-            tomorrow.
-          </p>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="max-width-wrapper">
-        <div class="card">
-          <h2 class="indented-heading">
-            Wealth comes from operations
-          </h2>
-          <p>
-            No modern business can thrive without
-            developing a specialization in
-            operations. <em>Huckleberry</em> has
-            helped dozens of companies, from
-            Fortune 50 monoliths to fast-growing
-            Bay Area startups, achieve their goals
-            and meet their KPIs by leveraging our
-            extensive network of logistics
-            experts.
-          </p>
-          <p>
-            <em>Huckleberry</em> was established
-            in 2003 to help ambitious businesses
-            discover their true potential. If that
-            resonates, let's chat. ☎
-          </p>
-        </div>
-      </section>
-    </main>
-  </body>
-</html>
+.max-width-wrapper {
+  margin: 0px auto;
+  max-width: 560px;
+}
+
+strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+header {
+  border-bottom: 4px solid hsl(0deg, 0%, 30%);
+  padding: 24px;
+}
+
+.title {
+  font-size: 1.5rem;
+  padding-bottom: 24px;
+  padding-top: 64px;
+  margin-left: 12px;
+}
+
+main {
+  border-top: 64px solid hsl(0deg, 0%, 60%);
+  background-color: hsl(0deg, 0%, 60%);
+  border-bottom: 64px solid hsl(0deg, 0%, 60%);
+}
+
+.card {
+  background-color: white;
+  padding: 8px 10px;
+  font-size: 1rem;
+  border-bottom: 4px solid hsl(0deg, 0%, 30%);
+}
+
+.indented-heading {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 36px;
+  padding-right: 32px;
+  margin-left: -24px;
+  margin-right: 16px;
+  margin-top: 0px;
+  width: fit-content;
+  height: auto;
+  background-color: hsl(45deg, 100%, 50%);
+  font-size: 1.25rem;
+  border-bottom: 6px solid hsl(45deg, 100%, 40%);
+}
+
+.intro-chunk {
+  margin-bottom: 8px;
+  padding: 0 8px;
+  font-size: 1.25rem;
+  max-width: 350px;
+}
+
+p {
+  margin-left: 12px;
+}
